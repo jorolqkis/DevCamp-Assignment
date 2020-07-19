@@ -1,0 +1,51 @@
+#world {
+    padding-bottom: 10px;
+}
+
+.grenVSred {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rgTitle {
+    font-size: 52pt;
+    text-align: center;
+    background: -webkit-linear-gradient(red, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rgText {
+    background: -webkit-linear-gradient(red, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    align-items: center;
+    padding: 20px;
+    width: 45%;
+}
+
+.box {
+    padding: 20px;
+    width: 45%;
+}
+
+table {
+    background-color: whitesmoke;
+}
+
+td {
+    border: 1px solid darkgray;
+    width: 20px;
+    height: 20px;
+}
+
+td.red {
+    background-color: red;
+}
+
+td.green {
+    background-color: green;
+}

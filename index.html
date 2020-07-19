@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <title>Green VS Red</title>
+</head>
+
+<body>
+    <h1 class="rgTitle">Green VS Red</h1>
+    <div class="grenVSred">
+        <div class="box">
+            <h1 class="rgText">Rules:</h1>
+            <p>1. Each red cell that is surrounded by exactly 6 green cells will also become green in the nextgeneration. </p>
+            <p>2. A red cell will stay red in the next generation if it has either 0,1,2,4,5,7 or 8 green.</p>
+            <p>3. Each green cell surrounded by 0,1,4,5,7 or 8 green neighbours will become red in the next generation</p>
+            <p>4. A green cell will stay green in the next generation if it has either 2,3 or 6 green neighbours.</p>
+            <h1 class="rgText">Instructions</h1>
+            <ul>
+                <li>To generate a grid input rows and cols and press the button "Set Grid"</li>
+                <li>To generate a new grid first press the button "Clean Grid" to clear the old grid</li>
+                <li>To track a certain cell input coordinates x1 and y1 and press the button "Track cell"</li>
+                <li>To apply the rules to the grid press the button "Generate"</li>
+            </ul>
+            <h3 class="rgText">Select the size of the grid:</h3>
+            <div>
+                <input type="text" placeholder="rows" id="x">
+                <input type="text" placeholder="cols" id="y">
+                <input type="button" value='Set Grid' onclick="setGrid()"></input>
+                <Input type='button' id='btnreset' value='Clear Grid' onclick='resetWorld();'>
+            </div>
+            <h3 class="rgText">Select coordinates for the cell you want to track:</h3>
+            <div>
+                <input type="text" placeholder="x1" id="x1">
+                <input type="text" placeholder="y1" id="y1">
+                <button type="button" onclick="getInputValue()">Track Cell</button>
+            </div>
+        </div>
+        <div class="grid">
+            <h1 class="rgText">The Grid:</h1>
+            <div id='world'>
+                <p>Generations: <a id="clicks">0 </a></p>
+                <p> [<a id="x11">0</a>,<a id="y11">0</a>] Changed: <a id="changes">0 Times</a></p>
+
+                <input type='button' value='Generate' onclick='evolve()' .>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
