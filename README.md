@@ -22,4 +22,4 @@ One interacts with the Game of Life by creating an initial configuration and obs
    
    # What he app looks like 
   
-  ![Alt text](screenshots/ui.PNG)
+  ![Alt text](screenshot/App.PNG)
