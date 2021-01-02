@@ -20,6 +20,6 @@ One interacts with the Game of Life by creating an initial configuration and obs
    -To track a certain cell input coordinates x1 and y1 and press the button "Track cell".
    -To apply the rules to the grid press the button "Generate".
    
-   # What he app looks like 
+   # What the app looks like 
   
   ![Alt text](screenshot/App.PNG)
