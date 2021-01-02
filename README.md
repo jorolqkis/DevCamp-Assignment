@@ -21,4 +21,4 @@ One interacts with the Game of Life by creating an initial configuration and obs
    -To apply the rules to the grid press the button "Generate".
    
    # What he app looks like 
-   ![Alt text](ui.PNG)
+   ![Alt text](screenshots/ui.PNG)
